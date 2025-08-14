@@ -10,16 +10,24 @@ Local mirror of Claude Code documentation files from https://docs.anthropic.com/
 
 **This is an early beta release**. There may be errors or unexpected behavior. If you encounter any issues, please [open an issue](https://github.com/ericbuess/claude-code-docs/issues) - your feedback helps improve the tool!
 
-## 🆕 Version 0.3.3 - Changelog Integration
+## 🆕 Version 0.4.0 - Windows Compatibility
 
 **New in this version:**
-- 📋 **Claude Code Changelog**: Access the official Claude Code release notes with `/docs changelog`
-- 🍎 **Full macOS compatibility**: Fixed shell compatibility issues for Mac users
-- 🐧 **Linux support**: Tested on Ubuntu, Debian, and other distributions
-- 🔧 **Improved installer**: Better handling of updates and edge cases
+- 🪟 **Windows Support**: Full Windows 10+ compatibility with PowerShell and Command Prompt
+- 🐍 **Python Installer**: Cross-platform Python installer replaces bash-only version
+- 🔧 **Dependency Reduction**: Eliminates jq and curl dependencies
+- 🛡️ **Enhanced Safety**: Better error handling and recovery across all platforms
+- 🍎 **macOS/Linux**: Maintains full compatibility with improved reliability
 
 To update:
 ```bash
+# Windows (PowerShell)
+curl -o install.py https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.py; python install.py
+
+# macOS/Linux (Python installer)
+curl -o install.py https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.py && python3 install.py
+
+# macOS/Linux (Legacy bash)
 curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
 ```
 
@@ -33,30 +41,54 @@ curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/ins
 
 ## Platform Compatibility
 
+- ✅ **Windows**: Fully supported (Windows 10+, PowerShell and Command Prompt)
 - ✅ **macOS**: Fully supported (tested on macOS 12+)
 - ✅ **Linux**: Fully supported (Ubuntu, Debian, Fedora, etc.)
-- ⏳ **Windows**: Not yet supported - [contributions welcome](#contributing)!
 
 ### Prerequisites
 
 This tool requires the following to be installed:
+- **Python 3.6+** - For running the cross-platform installer (usually pre-installed on macOS/Linux)
 - **git** - For cloning and updating the repository (usually pre-installed)
-- **jq** - For JSON processing in the auto-update hook (pre-installed on macOS; Linux users may need `apt install jq` or `yum install jq`)
-- **curl** - For downloading the installation script (usually pre-installed)
 - **Claude Code** - Obviously :)
+
+**Note**: The new Python installer eliminates the need for `jq` and `curl` dependencies!
 
 ## Installation
 
-Run this single command:
+### Windows
+Download and run the Python installer:
 
+```powershell
+# Download the installer
+curl -o install.py https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.py
+# Run the installer
+python install.py
+```
+
+Or using PowerShell's `Invoke-WebRequest`:
+
+```powershell
+# Download and run in one step
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.py" -OutFile "install.py"; python install.py
+```
+
+### macOS/Linux (New Python Installer)
+```bash
+curl -o install.py https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.py && python3 install.py
+```
+
+### macOS/Linux (Legacy Bash Installer)
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
 ```
 
 This will:
-1. Install to `~/.claude-code-docs` (or migrate existing installation)
-2. Create the `/docs` slash command to pass arguments to the tool and tell it where to find the docs
-3. Set up a 'PreToolUse' 'Read' hook to enable automatic git pull when reading docs from the ~/.claude-code-docs`
+1. Install to the appropriate location:
+   - **Windows**: `%USERPROFILE%\.claude-code-docs` (e.g., `C:\Users\YourName\.claude-code-docs`)
+   - **macOS/Linux**: `~/.claude-code-docs`
+2. Create the `/docs` slash command with platform-appropriate helper scripts
+3. Set up automatic update hooks in Claude Code settings
 
 **Note**: The command is `/docs (user)` - it will show in your command list with "(user)" after it to indicate it's a user-created command.
 
@@ -147,9 +179,11 @@ If documentation seems outdated:
 3. Check if GitHub Actions are running: [View Actions](https://github.com/ericbuess/claude-code-docs/actions)
 
 ### Installation errors
-- **"git/jq/curl not found"**: Install the missing tool first
-- **"Failed to clone repository"**: Check your internet connection
-- **"Failed to update settings.json"**: Check file permissions on `~/.claude/settings.json`
+- **"Python not found"**: Install Python 3.6+ from python.org or Windows Store
+- **"git not found"**: Install Git for Windows from git-scm.com
+- **"Failed to clone repository"**: Check your internet connection and firewall settings
+- **"Permission denied"**: On Windows, run as Administrator or check antivirus software
+- **"Failed to update settings.json"**: Check file permissions on Claude settings directory
 
 ## Uninstalling
 
@@ -179,16 +213,18 @@ See [UNINSTALL.md](UNINSTALL.md) for manual uninstall instructions.
 
 ## What's New
 
-### v0.3.3 (Latest)
+### v0.4.0 (Latest) - Windows Compatibility
+- **🪟 Full Windows Support**: Works on Windows 10+ with PowerShell and Command Prompt
+- **🐍 Cross-Platform Python Installer**: Replaces bash-only installer with Python version
+- **🔧 Dependency Elimination**: No longer requires jq or curl
+- **🛡️ Enhanced Safety**: Better error handling and atomic file operations
+- **🚀 Improved Performance**: Faster dependency checking and git operations
+
+### v0.3.3
 - Added Claude Code changelog integration (`/docs changelog`)
 - Fixed shell compatibility for macOS users (zsh/bash)
 - Improved documentation and error messages
 - Added platform compatibility badges
-
-### v0.3.2
-- Fixed automatic update functionality  
-- Improved handling of local repository changes
-- Better error recovery during updates
 
 ## Contributing
 

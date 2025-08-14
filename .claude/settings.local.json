@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gcloud:*)",
+      "Bash(firebase --version)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "WebFetch(domain:github.com)",
+      "Bash(gh issue list:*)",
+      "Bash(gh issue close:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
