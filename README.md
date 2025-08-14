@@ -5,16 +5,17 @@
 [![Community Fork](https://img.shields.io/badge/status-community%20fork-green)](https://github.com/ericbuess/claude-code-docs)
 
 > **🔀 Community Fork Notice**  
-> This is a **community-maintained fork** that adds **Windows compatibility** to the original claude-code-docs project. It is provided **as-is** with no ongoing support.  
+> This is a **Windows-compatible fork** of the original claude-code-docs project by ericbuess. It is provided **as-is** with **no support whatsoever**.  
 >  
-> 📩 **For support, issues, or contributions:** Please use the [**original repository**](https://github.com/ericbuess/claude-code-docs) by ericbuess  
-> 🎯 **This fork's purpose:** Provide Windows users immediate access to Claude Code documentation tools
+> ⚠️ **No Support Policy:** No issues, bug reports, feature requests, or support will be provided. Use at your own risk.  
+> 🎯 **This fork's purpose:** Provide Windows users immediate access to Claude Code documentation tools  
+> 🙏 **Original project:** Based on excellent work by [ericbuess](https://github.com/ericbuess/claude-code-docs)
 
 Local mirror of Claude Code documentation files from https://docs.anthropic.com/en/docs/claude-code/, updated every 3 hours.
 
-## ⚠️ Community Fork Notice
+## ⚠️ No Support Policy
 
-**This Windows-compatible fork is provided as-is**. If you encounter issues or need support, please report them to the [**original repository**](https://github.com/ericbuess/claude-code-docs/issues) by ericbuess, as this fork is not actively maintained.
+**This Windows-compatible fork is provided as-is with no warranty or support**. By using this software, you accept full responsibility for any issues that may arise. No technical support, bug fixes, or feature requests will be addressed.
 
 ## 🆕 Version 0.4.0 - Windows Compatibility
 
@@ -252,17 +253,18 @@ See [UNINSTALL.md](UNINSTALL.md) for detailed instructions and manual uninstall 
 
 ## Contributing
 
-**This fork is not accepting contributions.** For all contributions, improvements, bug reports, and feature requests, please use the [**original repository**](https://github.com/ericbuess/claude-code-docs) by ericbuess.
+**This fork does not accept any contributions, issues, or support requests.** This is a static Windows-compatibility fork provided as-is.
 
-This fork exists solely to provide Windows compatibility and is maintained as-is. The original project maintainer can decide whether to incorporate Windows support into the main project.
+If you're interested in contributing to claude-code-docs development, please consider the [original project](https://github.com/ericbuess/claude-code-docs) by ericbuess.
 
 ## Known Issues
 
-As this is a community fork, you might encounter some issues:
+As this is a community fork provided without support, you may encounter issues such as:
 - Auto-updates may occasionally fail on some network configurations
 - Some documentation links might not resolve correctly
+- Windows-specific compatibility problems
 
-If you find any issues, please [report them to the original repository](https://github.com/ericbuess/claude-code-docs/issues)!
+**No support is provided for any issues.** This software is provided as-is under the MIT license with no warranty.
 
 ## License
 
