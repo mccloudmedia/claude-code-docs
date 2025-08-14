@@ -1,2 +1,62 @@
-# Research folder - local development notes and documentation
+# Development and Research Files
 research/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Claude Code Local Files
+.claude/
+CLAUDE.local.md
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Logs
+*.log
+logs/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup Files
+*.backup
+*.bak
+*~
+
+# Local Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+test-results/
+coverage/
+.coverage
+.nyc_output

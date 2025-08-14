@@ -187,18 +187,30 @@ If documentation seems outdated:
 
 ## Uninstalling
 
-To completely remove the docs integration:
+### Cross-Platform Python Uninstaller (Recommended)
+
+**Windows:**
+```powershell
+python "%USERPROFILE%\.claude-code-docs\uninstall.py"
+```
+
+**macOS/Linux:**
+```bash
+python3 ~/.claude-code-docs/uninstall.py
+```
+
+### Legacy Options
 
 ```bash
 /docs uninstall
 ```
 
-Or run:
+Or run the bash version (macOS/Linux only):
 ```bash
 ~/.claude-code-docs/uninstall.sh
 ```
 
-See [UNINSTALL.md](UNINSTALL.md) for manual uninstall instructions.
+See [UNINSTALL.md](UNINSTALL.md) for detailed instructions and manual uninstall options.
 
 ## Security Notes
 

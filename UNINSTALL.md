@@ -1,24 +1,29 @@
 # Uninstalling Claude Code Documentation Mirror
 
-## Quick Uninstall
+## Cross-Platform Uninstaller (v0.4.0+)
 
-### For v0.3+ (installed at ~/.claude-code-docs)
+### Python Uninstaller (Recommended)
 
-From anywhere, run:
+**Windows:**
+```powershell
+python "C:\Users\%USERNAME%\.claude-code-docs\uninstall.py"
+```
+
+**macOS/Linux:**
+```bash
+python3 ~/.claude-code-docs/uninstall.py
+```
+
+### Legacy Bash Uninstaller (macOS/Linux only)
+
+**For v0.3+ installations:**
 ```bash
 ~/.claude-code-docs/uninstall.sh
 ```
 
-Or use the docs command:
+**Or use the docs command:**
 ```bash
 /docs uninstall
-```
-
-### For v0.2 or older (custom installation locations)
-
-Navigate to your installation directory and run:
-```bash
-./uninstall.sh
 ```
 
 ## What Gets Removed
@@ -26,10 +31,11 @@ Navigate to your installation directory and run:
 The uninstaller will remove:
 
 1. **The /docs command** from `~/.claude/commands/docs.md`
-2. **The auto-update hook** from `~/.claude/settings.json`
-3. **The installation directory**:
-   - v0.3+: `~/.claude-code-docs`
-   - v0.2 or older: wherever you installed it
+2. **All claude-code-docs hooks** from `~/.claude/settings.json`
+3. **Installation directories** (only if they are clean git repositories):
+   - **Windows**: `%USERPROFILE%\.claude-code-docs`
+   - **macOS/Linux**: `~/.claude-code-docs`
+4. **Preserves directories** with uncommitted changes or non-git directories
 
 ## Manual Uninstall
 
@@ -76,7 +82,17 @@ After uninstalling, there should be no traces left except:
 
 ## Reinstalling
 
-To reinstall after uninstalling:
+**Windows:**
+```powershell
+curl -o install.py https://raw.githubusercontent.com/mccloudmedia/claude-code-docs/main/install.py; python install.py
+```
+
+**macOS/Linux (Python installer):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/install.sh | bash
+curl -o install.py https://raw.githubusercontent.com/mccloudmedia/claude-code-docs/main/install.py && python3 install.py
+```
+
+**macOS/Linux (Legacy bash):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/mccloudmedia/claude-code-docs/main/install.sh | bash
 ```
