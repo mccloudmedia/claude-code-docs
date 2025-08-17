@@ -207,8 +207,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-08-17T12:05:54.598349",
-    "fetch_duration_seconds": 18.044232,
+    "last_fetch_completed": "2025-08-17T15:03:34.500227",
+    "fetch_duration_seconds": 18.319689,
     "total_pages_discovered": 33,
     "pages_fetched_successfully": 34,
     "pages_failed": 0,
@@ -218,7 +218,7 @@
     "total_files": 34,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-08-17T12:05:54.598382",
+  "last_updated": "2025-08-17T15:03:34.500256",
   "base_url": "https://raw.githubusercontent.com/mccloudmedia/claude-code-docs/main/docs/",
   "github_repository": "mccloudmedia/claude-code-docs",
   "github_ref": "main",
