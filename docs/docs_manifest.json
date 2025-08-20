@@ -57,8 +57,8 @@
     "google-vertex-ai.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/google-vertex-ai",
       "original_md_url": "https://docs.anthropic.com/en/docs/claude-code/google-vertex-ai.md",
-      "hash": "656585037bc7105ca3171751b0ef64c86bc8d9bc2b8824849b93b628b024971c",
-      "last_updated": "2025-08-06T00:04:57.001522"
+      "hash": "f5b30d9cd3542be8ab712ba581e4647132ebd4aacd48d5b8020bad8a30a8e6c5",
+      "last_updated": "2025-08-20T18:04:59.883636"
     },
     "hooks.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/hooks",
@@ -171,8 +171,8 @@
     "statusline.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/statusline",
       "original_md_url": "https://docs.anthropic.com/en/docs/claude-code/statusline.md",
-      "hash": "19bf4609c0b2aff1a843c6d7e4224ab52c6a1702cd38f5d63f5c317f0e98c4d3",
-      "last_updated": "2025-08-14T18:05:09.031638"
+      "hash": "7e9ba7d4046c8f50477b4b86fdfb40909738492094f7adabff9e7db814597baa",
+      "last_updated": "2025-08-20T18:05:10.958672"
     },
     "sub-agents.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
@@ -207,8 +207,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-08-20T15:04:26.669046",
-    "fetch_duration_seconds": 18.867575,
+    "last_fetch_completed": "2025-08-20T18:05:13.335505",
+    "fetch_duration_seconds": 19.586663,
     "total_pages_discovered": 33,
     "pages_fetched_successfully": 34,
     "pages_failed": 0,
@@ -218,7 +218,7 @@
     "total_files": 34,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-08-20T15:04:26.669076",
+  "last_updated": "2025-08-20T18:05:13.335532",
   "base_url": "https://raw.githubusercontent.com/mccloudmedia/claude-code-docs/main/docs/",
   "github_repository": "mccloudmedia/claude-code-docs",
   "github_ref": "main",
