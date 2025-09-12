@@ -153,8 +153,8 @@
     "sdk__custom-tools.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/sdk/custom-tools",
       "original_md_url": "https://docs.anthropic.com/en/docs/claude-code/sdk/custom-tools.md",
-      "hash": "3e6e3899afe967c87f77822f6268daea1cd6374f1ef2fa1d827913d57b92f11c",
-      "last_updated": "2025-09-12T18:05:19.703625"
+      "hash": "7cb3754f5c50f5868eea8f27f285551f6fe194d860be433926d5308906572504",
+      "last_updated": "2025-09-12T21:03:55.667834"
     },
     "sdk__modifying-system-prompts.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/sdk/modifying-system-prompts",
@@ -297,8 +297,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-09-12T18:06:02.824514",
-    "fetch_duration_seconds": 94.740435,
+    "last_fetch_completed": "2025-09-12T21:04:07.436996",
+    "fetch_duration_seconds": 27.63994,
     "total_pages_discovered": 48,
     "pages_fetched_successfully": 49,
     "pages_failed": 0,
@@ -308,7 +308,7 @@
     "total_files": 49,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-09-12T18:06:02.824538",
+  "last_updated": "2025-09-12T21:04:07.437024",
   "base_url": "https://raw.githubusercontent.com/mccloudmedia/claude-code-docs/main/docs/",
   "github_repository": "mccloudmedia/claude-code-docs",
   "github_ref": "main",
